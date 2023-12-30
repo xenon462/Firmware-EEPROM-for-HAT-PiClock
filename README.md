@@ -99,6 +99,15 @@ cat /proc/device-tree/hat/uuid <(echo)
 ```
 cat /proc/device-tree/hat/vendor <(echo)
 ```
+#### Внести изменения в файл _config.txt_
+```
+sudo nano /boot/config.txt
+```
+#### Добавить строки
+```
+dtoverlay=hifiberry-dac
+dtoverlay=vc4-kms-v3d,noaudio
+```
 
 #### Проверить наличие звуковой карты:
 
